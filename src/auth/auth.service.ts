@@ -25,7 +25,7 @@ export class AuthService {
 
     async login(user: any) {
         const payload = { email: user.email, sub: user.userId };
-        let expiresIn = new Date(); expiresIn.setSeconds(expiresIn.getSeconds() + 60);
+        let expiresIn = new Date(); expiresIn.setSeconds(expiresIn.getSeconds() + 86400);
         return {
             access_token: this.jwtService.sign(payload),
             expiresIn
