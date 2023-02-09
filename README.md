@@ -1,1 +1,1 @@
-# DS_elp2_BE
+# Devstock e-Learning-Platform backend
